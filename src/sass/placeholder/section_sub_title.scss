@@ -1,0 +1,23 @@
+%section_sub_title {
+    @extend %Acrom_ExtraBold;
+    font-size: 16px;
+    color: $primary-font-color;
+    line-height: 24px;
+    background-color: $primary-bg-color;
+    display: inline-block;    
+    
+
+    &::before {
+        content: '[';
+        display: inline-block;
+        margin-right: 8px;
+        margin-left: 4px;
+    }
+
+    &::after {
+        content: ']';
+        display: inline-block;
+        margin-left: 8px;
+        margin-right: 4px;
+    }    
+}

@@ -1,0 +1,54 @@
+%section_title {
+    @extend %Acrom_ExtraBold;
+    font-size: 20px;
+    color: $primary-font-color;
+    line-height: 24px;
+    letter-spacing: - 0.4px;
+    
+
+    &::before {
+        content: '[';
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    &::after {
+        content: ']';
+        display: inline-block;
+        margin-left: 8px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+        line-height: 36px;
+
+        &::before {
+            content: '[';
+            display: inline-block;
+            margin-right: 12px;
+        }
+    
+        &::after {
+            content: ']';
+            display: inline-block;
+            margin-left: 12px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 48px;
+        line-height: 58px;
+
+        &::before {
+            content: '[';
+            display: inline-block;
+            margin-right: 18px;
+        }
+    
+        &::after {
+            content: ']';
+            display: inline-block;
+            margin-left: 18px;
+        }
+    }
+}

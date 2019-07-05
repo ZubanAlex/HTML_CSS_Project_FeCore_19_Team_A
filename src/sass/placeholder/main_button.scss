@@ -1,0 +1,10 @@
+%main_button {
+    display: block;
+    margin: 0 auto;
+    @extend %Acrom_ExtraBold;
+    background-color: $secondary-site-color;
+    color: $secondary-font-color;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px 0px rgba(255,107,8,0.59);
+}

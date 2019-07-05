@@ -1,0 +1,17 @@
+.container {
+    width: 260px;
+    @extend %Acrom_Regular;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        width: 748px ;
+        font-size: 16px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1170px ;
+        font-size: 18px;
+    }
+}
