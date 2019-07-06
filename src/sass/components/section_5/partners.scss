@@ -1,8 +1,16 @@
 .partners{
     padding-top: 62px;
+    padding-bottom: 48px;
 }
 
 .partners__tag{
     @extend %section_sub_title;
+}
+
+.partners__logos{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
