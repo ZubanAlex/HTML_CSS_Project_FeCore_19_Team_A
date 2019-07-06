@@ -11,24 +11,16 @@
 
 .partners__tag{
     @extend %section_sub_title;
-    
-    @media (min-width: 768px){
-        margin-left: 50px;
+
+    @media (min-width: 768px) and (max-width: 1199px){
+        margin-left: 34px;
     }
 }
 
 .partners__logos{
-    padding-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container__images{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.partners__logo:not(:last-child){
-    margin-right: 15px;
+    margin-top: 14px;
+    
+    @media (min-width: 768px) and (max-width: 1199px){
+        margin-left: 34px;
+    }
 }

@@ -49,7 +49,22 @@
         </li>
         <li class="partners">
             <span class="partners__tag">Партнеры</span>
-            <img src="#" alt="Partners' logos" class="partners__logos">
+            <picture>
+                    <source
+                        media="(min-width: 1200px)"
+                        srcset="images/section_5/desktop.jpg"
+                        type="image/jpg">
+                    <source
+                        media="(min-width: 768px)"
+                        srcset="images/section_5/tablet.jpg"
+                        type="image/jpg">
+                    <source
+                        media="(min-width: 320px)"
+                        srcset="images/section_5/mobile.jpg"
+                        type="image/jpg">
+                    <img
+                        src="images/section_5/mobile.jpg" alt="Partners' logos" class="partners__logos">
+            </picture>
         </li>
         </ul>
     </div>
