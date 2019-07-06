@@ -1,16 +1,34 @@
 .partners{
     padding-top: 62px;
     padding-bottom: 48px;
+
+    @media (min-width: 1200px){
+        order: 1;
+        width: 656px;
+        padding-top: 0;
+    }
 }
 
 .partners__tag{
     @extend %section_sub_title;
+    
+    @media (min-width: 768px){
+        margin-left: 50px;
+    }
 }
 
 .partners__logos{
     padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
+.container__images{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.partners__logo:not(:last-child){
+    margin-right: 15px;
+}
