@@ -1,0 +1,52 @@
+.find-out {
+    background-image: url(../images/section_4_BG.png);
+
+    padding: 38px 0 42px 0;
+    min-width: 320px; 
+}
+
+.find-out__question {
+    @extend %Acrom_ExtraBold;
+    color: $secondary-font-color;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    margin-bottom: 26px;
+}
+
+.find-out__info {
+    @extend %Acrom_ExtraBold;
+    color: $secondary-font-color;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    margin-bottom: 30px;    
+
+    &::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: $primary-site-color;
+        margin-bottom: 18px;
+    }
+
+    &--focus {
+        @extend %Acrom_Regular;
+        color: #c9c9ca;
+    }
+}
+
+.find-out__title {
+    @extend %section_title;
+    color: $primary-site-color;
+    letter-spacing: -0.8px;
+    margin-bottom: 26px;
+}
+
+.find-out-button {
+    @extend %main_button;
+    letter-spacing: -0.1px;
+    width: 260px;
+    padding: 27px 16px;
+}
