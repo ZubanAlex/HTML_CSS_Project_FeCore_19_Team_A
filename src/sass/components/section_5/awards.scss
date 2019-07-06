@@ -1,16 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
 .awards__tag{
     @extend %section_sub_title;
 }
 
-.awards__title{
-    @extend %Acrom_ExtraBold;
+.awards__award{
 }
 
-.awards__small-title{
+.award{
+    width: 226px;
+    margin: 0 auto;
+    box-shadow: -30px 36px 0px 0px rgba(230,233,235,1);
+    background-color: #fff;
+    position: relative;
+    background-color: red;
+}
+
+.award::before{
+    content: '';
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    color: #EDF0F2;
+    margin-bottom: -25px;
+    margin-left: 140px;
+    position: absolute;
+    z-index: -1;
+}
+
+.one{
+    margin-top: 28px;
+}
+
+.two, .three{
+    margin-top: 90px;
+}
+
+.one::before{
+    content: '01';
+}
+
+.two::before{
+    content: '02';
+}
+
+.three::before{
+    content: '03';
+}
+
+.award__container {
+    width: 168px;
+    margin: 0 auto;    
+
+    @media (min-width: 768px) {
+        width: 748px ;
+        font-size: 16px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1170px ;
+        font-size: 18px;
+    }
+}
+
+.award__title{
+    @extend %Acrom_ExtraBold;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.award__title::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    color: $primary-site-color;
+    margin-bottom: -25px;
+    margin-left: 140px;
+}
+
+.award__small-title{
     @extend %Acrom_Regular;
     font-weight: 800;
+    font-size: 14px;
 }
 
-.awards__text{
+.award__text{
     @extend %Acrom_Regular;
+    color: #6B6F7A;
 }
