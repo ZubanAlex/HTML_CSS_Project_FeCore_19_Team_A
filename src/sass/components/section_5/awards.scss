@@ -4,12 +4,9 @@
     @extend %section_sub_title;
 }
 
-.awards__award{
-}
-
 .award{
     max-width: 226px;
-    margin: 60px auto 0;
+    margin: 80px auto 0;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);    
     background-color: #fff;
     position: relative;
@@ -41,7 +38,16 @@
     left: -30px;
 }
 
-.two, .three{
+.one::after{
+    height: 436px;
+}
+
+.two::after{
+    height: 523px;
+}
+
+.three::after{
+    height: 561px;
 }
 
 .one::before{
