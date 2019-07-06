@@ -13,7 +13,6 @@
     box-shadow: -30px 36px 0px 0px rgba(230,233,235,1);
     background-color: #fff;
     position: relative;
-    background-color: red;
 }
 
 .award::before{
@@ -23,10 +22,10 @@
     font-weight: 700;
     font-size: 70px;
     color: #EDF0F2;
-    margin-bottom: -25px;
-    margin-left: 140px;
     position: absolute;
     z-index: -1;
+    top: -3rem;
+    right: 0;
 }
 
 .one{
@@ -66,7 +65,6 @@
 
 .award__title{
     @extend %Acrom_ExtraBold;
-    padding-bottom: 20px;
     font-size: 18px;
 }
 
@@ -84,6 +82,7 @@
     @extend %Acrom_Regular;
     font-weight: 800;
     font-size: 14px;
+    padding-top: 20px;
 }
 
 .award__text{
