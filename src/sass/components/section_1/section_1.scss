@@ -1,0 +1,155 @@
+.section-1-consult .container {
+    width: 285px;
+}
+
+.section-1-consult {
+    padding: 34px 0 38px 0;  
+}
+
+.container-consult__section-title {
+    @extend %section_title; 
+    line-height: 30px;
+    margin-bottom: 23px;
+}
+
+.consalt-list__items {
+    margin-bottom: 19px;
+    padding-left: 36px;
+    position: relative;
+    line-height: 20px;
+    @extend %Acrom_Regular;
+
+        &:nth-child(1) {
+            width: 227px;
+        }
+
+        &:nth-child(2) {
+            width: 257px;
+        }
+
+        &:nth-child(3) {
+            width: 261px;
+        }
+
+        &:nth-child(4) {
+            width: 255px;
+        }
+
+        &:nth-child(5) {
+            width: 236px;
+        }
+
+        &::before {
+            content: '\2192';
+            display: block;
+            color: $primary-site-color;
+            position: absolute;
+            left: 0;
+        }
+
+        &--focus {
+            @extend %accent;
+        }
+    }   
+
+    @media (min-width: 768px) {
+        .section-1-consult .container {
+            width: 748px;
+     }   
+
+        .section-1-consult {
+            padding: 40px 0 55px 0;
+     }
+
+        .container-consult__section-title {
+            margin-bottom: 32px;
+            padding: 0 24px 0 64px;
+     }
+
+        .consalt-list__items {
+
+        line-height: 22px;
+
+        &:nth-child(1) {
+            width: 435px;
+        }
+
+        &:nth-child(2) {
+            width: 566px;
+        }
+
+        &:nth-child(3) {
+            width: 548px;
+        }
+
+        &:nth-child(4) {
+            width: 582px;
+        }
+
+        &:nth-child(5) {
+            width: 603px;
+        }
+    }
+
+        .container-list {
+            padding-left: 64px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .section-1-consult .container {
+            width: 1136px;
+            display: flex;
+            justify-content: space-between;
+    }
+
+        .section-1-consult {
+            padding: 132px 0 97px 0;
+        }
+
+        .container-consult {
+            width: 486px;
+            height: 225px;
+        }
+
+        .container-consult__section-title {
+            padding: 0;
+            margin: 0;
+            letter-spacing: -3px;
+        }
+
+        .consalt-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 423px;
+        }
+
+        .consalt-list__items {
+
+            line-height: 30px;
+
+            &:nth-child(1) {
+                width: 485px;
+            }
+    
+            &:nth-child(2) {
+                width: 470px;
+            }
+    
+            &:nth-child(3) {
+                width: 503px;
+            }
+    
+            &:nth-child(4) {
+                width: 470px;
+            }
+    
+            &:nth-child(5) {
+                width: 514px;
+            }
+        }
+
+    }
+
+    
