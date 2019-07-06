@@ -1,0 +1,144 @@
+.section_2 {
+    background-color: #edf0f2;
+}
+
+.section_2 .container {
+    width: 320px;
+   
+}
+
+.container {
+    @extend %Acrom_Regular;
+    display: block;
+    
+}
+.head_titl {
+    // text-align: left;
+    @extend %Acrom_Regular;
+    text-align: center;
+    margin: 0 auto;
+    width: 223px;
+    padding-top: 35px;
+}
+
+.numero {
+  padding-top: 35px;
+    
+}
+
+.number {
+    background-color: #ffffff;
+    width: 225px;
+    height: 230px;
+    margin: 0 auto;
+    box-shadow: -20px 13px 5px 0px #dcdfe1;
+    position: relative;
+}
+
+.list {
+    position: relative;
+    margin: 0;
+    padding-top: 35px;
+    text-align: center;
+    z-index: 0;
+        
+}
+
+.list2 {
+    padding-top: 39px;
+}
+
+.list3 {
+    padding-top: 38px;
+}
+
+
+
+.text {
+    text-align: left;
+    padding-top: 40px;
+    width: 154px;
+    height: 101px;
+    margin: 0 auto;
+}
+
+.size {
+    font-weight:bold ;
+    font-family: "Acrom";
+}
+
+.text::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #00eaff;
+    width: 60px;
+    height: 2px;
+    top: 35px;
+    left: -15px;
+
+}
+
+.number::before {
+    display: block;
+    content: url(../images/icon/number01@1X.png);
+    position: absolute;
+    transform: translate(170px, -50%);
+    z-index: -1;
+}
+
+.number02::before{
+    content: url(../images/icon/number02@1X.png);
+    
+}
+.number03::before{
+    content: url(../images/icon/number03@1X.png);
+}
+
+
+      
+      
+ 
+.cta {
+   padding-top: 34px;
+   padding-bottom: 38px;
+   
+}
+
+.button {
+    width: 225px;
+    height: 106px;
+    text-align: center;
+    @extend %main_button ;
+
+} 
+
+@media (min-width: 768px) {
+     .section_2 .container {
+        width: 725px ;
+        font-size: 16px;
+        display: block;
+     
+        .head_titl {
+        @extend %Acrom_Regular;
+        display: block;
+        width: 528px;
+        
+        }
+        .title {
+            text-align: center;
+        }
+        .numero {
+         display: flex;
+         justify-content: space-around;   
+
+        }
+    }
+
+}
+
+    
+
+
+
+
