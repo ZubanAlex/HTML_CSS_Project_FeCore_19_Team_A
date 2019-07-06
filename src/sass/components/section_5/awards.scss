@@ -8,11 +8,12 @@
 }
 
 .award{
-    width: 226px;
-    margin: 0 auto;
-    box-shadow: -30px 36px 0px 0px rgba(230,233,235,1);
+    max-width: 226px;
+    margin: 60px auto 0;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);    
     background-color: #fff;
     position: relative;
+    padding: 50px 24px 32px;
 }
 
 .award::before{
@@ -24,16 +25,23 @@
     color: #EDF0F2;
     position: absolute;
     z-index: -1;
-    top: -3rem;
+    top: -55px;
     right: 0;
 }
 
-.one{
-    margin-top: 28px;
+.award::after{
+    content: '';
+    display: block;
+    width: 226px;
+    height: 415px;
+    background-color: #EDF0F2;
+    position: absolute;
+    z-index: -1;
+    top: 26px;
+    left: -30px;
 }
 
 .two, .three{
-    margin-top: 90px;
 }
 
 .one::before{
@@ -65,27 +73,36 @@
 
 .award__title{
     @extend %Acrom_ExtraBold;
-    font-size: 18px;
+    position: relative;
+    font-size: 25px;
+    line-height: 120%;
 }
 
 .award__title::before{
     content: '';
     display: block;
+    position: absolute;
     width: 60px;
     height: 3px;
-    color: $primary-site-color;
-    margin-bottom: -25px;
-    margin-left: 140px;
-}
-
-.award__small-title{
-    @extend %Acrom_Regular;
-    font-weight: 800;
-    font-size: 14px;
-    padding-top: 20px;
+    background-color: $primary-site-color;
+    top: -25px;
+    left: -35px;
 }
 
 .award__text{
+    margin-top: 20px;
     @extend %Acrom_Regular;
     color: #6B6F7A;
+}
+
+.award__small-title{
+    @extend %Acrom_ExtraBold;
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 44px;
+    color: #000000;
+}
+
+.award img{
+    margin: 28px auto 0;
 }
