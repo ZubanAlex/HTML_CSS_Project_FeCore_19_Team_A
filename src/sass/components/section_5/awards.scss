@@ -1,0 +1,16 @@
+.awards__tag{
+    @extend %section_sub_title;
+}
+
+.awards__title{
+    @extend %Acrom_ExtraBold;
+}
+
+.awards__small-title{
+    @extend %Acrom_Regular;
+    font-weight: 800;
+}
+
+.awards__text{
+    @extend %Acrom_Regular;
+}
