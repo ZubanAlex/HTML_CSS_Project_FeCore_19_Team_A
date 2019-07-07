@@ -1,6 +1,10 @@
 .partners{
     padding-top: 62px;
-    padding-bottom: 48px;
+    // padding-bottom: 48px;
+
+    @media (min-width: 768px){        
+        padding-bottom: 0;
+    }
 
     @media (min-width: 1200px){
         order: 1;

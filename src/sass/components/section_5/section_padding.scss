@@ -1,0 +1,13 @@
+.section-5 {
+    padding-top: 36px;
+    padding-bottom: 48px;
+
+    @media (min-width: 768px){
+        padding-top: 54px;        
+    }
+
+    @media (min-width: 1200px){
+        padding-top: 100px;
+        padding-bottom: 100px; 
+    }
+}

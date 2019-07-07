@@ -1,13 +1,18 @@
 .section-5__title{
     @extend %section_title;
-    margin-top: 54px;
+    width: 190px;
+    line-height: 30px;
+    padding-left: 17px;    
 
-    @media (min-width: 768px){
-        margin: 54px 50px 0;
+    @media (min-width: 768px){        
+        margin-left: 50px;
+        width: 545px;
+        padding-left: 0;
     }
 
     @media (min-width: 1200px){
         margin-left: 0;
+        width: 700px;
     }
 }
 

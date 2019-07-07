@@ -13,7 +13,7 @@
 
 .it-interest .container {
     @media (min-width: 1200px) {        
-        position: relative;        
+        // position: relative;        
     } 
 }
 
@@ -198,10 +198,10 @@
 
 .it-interest__wrapper_2 {    
     @media (min-width: 1200px) {
-        width: 560px;
-        position: absolute;
-        bottom: -8px;
-        right: -154px;          
+        // width: 560px;
+        // position: absolute;
+        // bottom: -8px;
+        // right: -154px;          
     }
 }
 
@@ -214,6 +214,7 @@
     }
 
     @media (min-width: 1200px) {
+        font-size: 43px;
         padding-left: 0;
         letter-spacing: -2px;    
     }
@@ -248,5 +249,12 @@
         width: 12px;
         height: 12px;
         background-color: $primary-site-color;
+    }
+}
+
+.it-interest__wrapper_main {
+    @media (min-width: 1200px) {
+        display: flex;
+        align-items: flex-end;    
     }
 }
