@@ -1,0 +1,26 @@
+.partners{
+    padding-top: 62px;
+    padding-bottom: 48px;
+
+    @media (min-width: 1200px){
+        order: 1;
+        width: 656px;
+        padding-top: 0;
+    }
+}
+
+.partners__tag{
+    @extend %section_sub_title;
+
+    @media (min-width: 768px) and (max-width: 1199px){
+        margin-left: 34px;
+    }
+}
+
+.partners__logos{
+    margin-top: 14px;
+    
+    @media (min-width: 768px) and (max-width: 1199px){
+        margin-left: 34px;
+    }
+}

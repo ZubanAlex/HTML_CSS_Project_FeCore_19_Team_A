@@ -1,0 +1,43 @@
+.tender {
+    padding-top: 80px;
+    background-image: url('../images/section_5/Layer\ 413@1X.png');
+    background-repeat: no-repeat;
+    background-position: center 70px;
+    
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx){
+        background-image: url('../images/section_5/Layer\ 413@2X.png');
+        background-size: 144px 122px;
+    }
+
+    @media (min-width: 768px){
+        width: 400px;
+        margin: 0 auto;
+        background-position: 220px 70px;
+    }
+    
+    @media (min-width: 1200px){
+        order: 0;
+        padding-top: 0;
+        margin-left: 0;
+        background-position: top 0 right 0;
+    }
+}
+
+.tender__tag{
+    @extend %section_sub_title;
+}
+
+.tender__title{
+    @extend %Acrom_ExtraBold;
+    font-size: 25px;
+    line-height: 120%;
+    margin-top: 42px;
+}
+
+.tender__text{
+    @extend %Acrom_Regular;
+    color: #6B6F7A;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 150%;
+}

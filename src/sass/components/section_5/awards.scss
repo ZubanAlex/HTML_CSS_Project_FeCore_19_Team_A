@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+
+@media (min-width: 1200px){
+    .awards{
+        order: 2;
+        width: 1200px;
+        margin-top: 40px;
+    }
+}
+
+.awards__tag{
+    @extend %section_sub_title;
+
+    @media (min-width: 768px){
+        margin-left: 50px;
+    }
+
+    @media (min-width: 1200px){
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .awards__award{
+        display: flex;
+    }
+}
+
+.award{
+    width: 225px;    
+    margin: 80px auto 0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15),
+    -15px 26px 0px 0px rgba(237,240,242,1);    
+    background-color: #fff;
+    position: relative;
+    padding: 50px 24px 32px;
+
+    @media (min-width: 1200px){
+        width: 375px;
+        box-shadow: none;
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    &::before{
+        content: '';
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 70px;
+        color: #EDF0F2;
+        position: absolute;
+        z-index: -1;
+        top: -55px;
+        right: 0;
+    
+        @media (min-width: 1200px){
+        transform: rotate(-90deg);
+        font-size: 30px;
+        }
+    }
+}
+
+.one::before{
+    content: '01';    
+}
+
+.two::before{
+    content: '02';
+}
+
+.three::before{
+    content: '03';
+}
+
+.award__container {
+    width: 168px;
+    margin: 0 auto;
+    
+    @media (max-width: 1199px) {    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+    @media (min-width: 1200px){
+        width: 390px;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.awards__wrapper{
+    width: 168px;
+}
+
+.award__title{
+    @extend %Acrom_ExtraBold;
+    position: relative;
+    font-size: 25px;
+    line-height: 120%;
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 60px;
+        height: 3px;
+        background-color: $primary-site-color;
+        top: -25px;
+        left: -35px;
+    
+        @media (min-width: 1200px){
+            display: none;
+        }
+    }
+}
+
+.award__text{
+    margin-top: 20px;
+    @extend %Acrom_Regular;
+    color: #6B6F7A;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.award__small-title{
+    @extend %Acrom_ExtraBold;
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 44px;
+    color: #000000;
+}
+
+.award img{
+    margin: 20px auto 0;
+
+    @media (min-width: 1200px){
+        margin: 0 0 0 40px;
+    }    
+}

@@ -1,0 +1,25 @@
+.section-5__title{
+    @extend %section_title;
+    margin-top: 54px;
+
+    @media (min-width: 768px){
+        margin: 54px 50px 0;
+    }
+
+    @media (min-width: 1200px){
+        margin-left: 0;
+    }
+}
+
+.section-5__articles{
+    padding-top: 50px;
+
+    @media (min-width: 1200px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.section-5__text{
+    font-size: 14px;
+}
