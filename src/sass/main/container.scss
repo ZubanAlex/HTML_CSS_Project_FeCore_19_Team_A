@@ -1,5 +1,6 @@
 .container {
-    width: 260px;
+    width: 100%;
+    padding: 0 15px;
     @extend %Acrom_Regular;
     font-size: 14px;
     margin: 0 auto;    
