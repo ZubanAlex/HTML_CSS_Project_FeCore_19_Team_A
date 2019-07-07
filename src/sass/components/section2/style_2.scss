@@ -13,11 +13,10 @@
     
 }
 .head_titl {
-    // text-align: left;
     @extend %Acrom_Regular;
     text-align: center;
     margin: 0 auto;
-    width: 223px;
+    width: 265px;
     padding-top: 35px;
 }
 
@@ -95,10 +94,6 @@
     content: url(../images/icon/number03@1X.png);
 }
 
-
-      
-      
- 
 .cta {
    padding-top: 34px;
    padding-bottom: 38px;
