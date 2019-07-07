@@ -3,6 +3,7 @@
   background-image: url(../images/bg-image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 320px;
   
   
 }
@@ -111,6 +112,7 @@
   @extend %Acrom_Regular;
   text-align: center;
   color: #5d6066;
+  font-size: 13px;
   padding: 15px 0 30px 0;
 }
 //  HEADER FORM SET end
@@ -118,10 +120,13 @@
 
 // MEDIA RULS start
 
-@media   (min-width: 767px) {
+@media   (min-width: 768px) {
   // FIRST SECTION START
   .header__box {
-    height: 930px;
+    height: 960px;
+  }
+  .header__logo {
+    padding-bottom: 35px;  
   }
   .header-tabl__subtitle {
         font-size: 14px;
@@ -174,14 +179,15 @@
   .header__form__flex {
     height: 300px;
   }
+  
   .header__second-block__form__subtitle {
-    display: none;
+    // display: none;
   }
   // SECOND SECTION END
   
 
 }
-@media (min-width: 1199px) {
+@media (min-width: 1200px) {
   // FIRST SECTION START
   .header__logo {
         padding-bottom: 60px;  
@@ -197,21 +203,21 @@
     width: 460px;
   }
   .header__first-block {
-    width: 730px;
+    width: 690px;
   }
   .header__first-block__subtitle {
-    width: 720px;
+    width: 690px;
     font-size: 20px;
     margin-bottom: 57px;
   }
   .header__first-block__title__h1 {
-    width: 720px;
+    width: 690px;
     font-size: 60px;
     line-height: 70px;
     margin-bottom: 57px;
   }
   .header-desk__subtitle {
-    width: 720px;
+    width: 690px;
     font-size: 35px;
     line-height: 40px;
     margin-bottom: 57px;
@@ -222,7 +228,7 @@
     line-height: 75px;
   }
   .header__first-block__title__h2 {
-    width: 730px;
+    width: 690px;
     font-size: 50px;
     line-height: 75px;
     
@@ -270,12 +276,14 @@
     margin: 0;
   }
   .header__second-block__form__subtitle {
-    display: block;
-    padding-left: 60%;
+    text-align: right;
+    padding-right: 8rem;
+    
   }
   .header__first-block {
     padding: 0;
   }
+ 
  
 }
 // SECOND SECTION END
