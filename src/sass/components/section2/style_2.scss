@@ -83,7 +83,7 @@
     display: block;
     content: url(../images/icon/number01@1X.png);
     position: absolute;
-    transform: translate(170px, -50%);
+    transform: translate(160px, -50%);
     z-index: -1;
 }
 
@@ -106,6 +106,7 @@
 }
 
 .button {
+    display: block;
     width: 225px;
     height: 106px;
     text-align: center;
@@ -120,7 +121,7 @@
         display: block;
      
         .head_titl {
-        @extend %Acrom_Regular;
+        font-family: 'Acrom';
         display: block;
         width: 528px;
         
@@ -133,12 +134,68 @@
          justify-content: space-around;   
 
         }
+
+        .list {
+          padding-left: 27px;
+          padding-top: 53px; 
+        }
+
+        .cta {
+            padding-top: 39px;
+            
+        }
+        .button {
+            margin: 0 auto;
+           width: 530px;
+           height: 70px;
+        }
+         
+        
+        }
+
     }
 
-}
+@media (min-width: 1200px) {
+    .section_2 .container{
+    width: 1170px ;
+    font-size: 18px;
+   
 
+    .head_titl {
+        width: 636px;
+        font-family: 'Acrom';
+        display: block;
+    }
+   .number {
+       width: 350px;
+       height: 276px;
+   }
+    
+    .button {
+        
+        width: 813px;
+        height: 109px;
+    }
+    .text {
+        width: 286px;
+        
+    }
+    .number::before {
+        display: block;
+        content: url(../images/icon/number01@1X.png);
+        position: absolute;
+        transform: translate(280px, -50%);
+        z-index: -1;
+    }
+    
+    .number02::before{
+        content: url(../images/icon/number02@1X.png);
+        
+    }
+    .number03::before{
+        content: url(../images/icon/number03@1X.png);
+    }
     
 
-
-
-
+    }
+}
