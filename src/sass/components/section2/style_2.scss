@@ -1,0 +1,196 @@
+.content2 {
+    background-color: #edf0f2;
+}
+
+.content2 .container {
+    width: 320px;
+   
+}
+
+.container {
+    @extend %Acrom_Regular;
+    display: block;
+    
+}
+.head_titl {
+    @extend %Acrom_Regular;
+    text-align: center;
+    margin: 0 auto;
+    width: 265px;
+    padding-top: 35px;
+}
+
+.numero {
+  padding-top: 35px;
+    
+}
+
+.number {
+    background-color: #ffffff;
+    width: 225px;
+    height: 230px;
+    margin: 0 auto;
+    box-shadow: -20px 13px 5px 0px #dcdfe1;
+    position: relative;
+}
+
+.list {
+    position: relative;
+    margin: 0;
+    padding-top: 35px;
+    text-align: center;
+    z-index: 0;
+        
+}
+
+.list2 {
+    padding-top: 39px;
+}
+
+.list3 {
+    padding-top: 38px;
+}
+
+
+
+.txt_2 {
+    text-align: left;
+    padding-top: 40px;
+    width: 154px;
+    height: 101px;
+    margin: 0 auto;
+}
+
+.size {
+    font-weight:bold ;
+    font-family: "Acrom";
+}
+
+.txt_2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #00eaff;
+    width: 60px;
+    height: 2px;
+    top: 35px;
+    left: -15px;
+
+}
+
+.number::before {
+    display: block;
+    content: url(../images/icon/number01@1X.png);
+    position: absolute;
+    transform: translate(160px, -50%);
+    z-index: -1;
+}
+
+.number02::before{
+    content: url(../images/icon/number02@1X.png);
+    
+}
+.number03::before{
+    content: url(../images/icon/number03@1X.png);
+}
+
+.cta {
+   padding-top: 34px;
+   padding-bottom: 38px;
+   
+}
+
+.btn_section2 {
+    display: block;
+    width: 225px;
+    height: 106px;
+    text-align: center;
+    @extend %main_button ;
+
+} 
+
+@media (min-width: 768px) {
+     .content2 .container {
+        width: 725px ;
+        font-size: 16px;
+        display: block;
+     
+        .head_titl {
+        font-family: 'Acrom';
+        display: block;
+        width: 528px;
+        
+        }
+        .career {
+            text-align: center;
+        }
+        .numero {
+         display: flex;
+         justify-content: space-around;   
+
+        }
+
+        .list {
+          padding-left: 27px;
+          padding-top: 53px; 
+        }
+
+        .cta {
+            padding-top: 39px;
+            
+        }
+        .btn_section2 {
+            margin: 0 auto;
+           width: 530px;
+           height: 70px;
+        }
+         
+        
+        }
+
+    }
+
+@media (min-width: 1200px) {
+    .content2 .container {
+    width: 1170px ;
+    font-size: 18px;
+   
+
+    .head_titl {
+        width: 636px;
+        font-family: 'Acrom';
+        display: block;
+    }
+   .number {
+       width: 350px;
+       height: 276px;
+   }
+    
+    .btn_section2 {
+        
+        width: 813px;
+        height: 109px;
+    }
+    .txt_2 {
+        width: 286px;
+        
+    }
+    .number::before {
+        display: block;
+        content: url(../images/icon/number01@1X.png);
+        position: absolute;
+        transform: translate(280px, -50%);
+        z-index: -1;
+    }
+    
+    .number02::before{
+        content: url(../images/icon/number02@1X.png);
+        
+    }
+    .number03::before{
+        content: url(../images/icon/number03@1X.png);
+    }
+    
+
+    }
+}
