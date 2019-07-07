@@ -1,0 +1,125 @@
+.find-out {
+    background-image: url(../images/section_4_BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 38px 0 42px 0;
+    min-width: 320px;
+    
+    @media (min-width: 768px) {
+        padding: 60px 0 64px 0;
+        background-position: center;        
+    }
+
+    @media (min-width: 1200px) {
+        padding: 90px 0 100px 0;                
+    }
+}
+
+.find-out__question {
+    @extend %Acrom_ExtraBold;
+    color: $secondary-font-color;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    margin-bottom: 26px;
+
+    @media (min-width: 768px) {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 38px;        
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 35px;
+        letter-spacing: -0.8px;
+        width: 688px;
+        margin-bottom: 60px;        
+    }
+}
+
+.find-out__info {
+    @extend %Acrom_ExtraBold;
+    color: $secondary-font-color;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    margin-bottom: 30px;
+    
+    @media (min-width: 768px) {
+        font-size: 16px;
+        width: 384px;
+        margin-bottom: 34px;                
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 33px;
+        width: 408px;
+        margin-bottom: 0;                
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 2px;
+        background-color: $primary-site-color;
+        margin-bottom: 18px;
+    }
+
+    &--focus {
+        @extend %Acrom_Regular;
+        color: #c9c9ca;
+    }
+}
+
+.find-out__title {
+    @extend %section_title;
+    color: $primary-site-color;
+    letter-spacing: -0.8px;
+    margin-bottom: 26px;
+
+    @media (min-width: 768px) {
+        font-size: 40px;
+        line-height: 50px;        
+        width: 700px;
+        margin-bottom: 34px;                
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 48px;               
+        width: 710px;
+        letter-spacing: -2px;
+        margin-bottom: 70px;                
+    }
+}
+
+.find-out-button {
+    @extend %main_button;
+    letter-spacing: -0.1px;
+    width: 260px;
+    padding: 27px 0;
+
+    @media (min-width: 768px) {
+        font-size: 18px;                
+        width: 532px;
+        padding: 25px 0;
+        margin: 0;                
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 30px;                
+        width: 684px;
+        padding: 40px 0 35px 0;                        
+    }
+}
+
+.find-out__wrapper_1 {
+    @media (min-width: 1200px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;                        
+    }
+}
