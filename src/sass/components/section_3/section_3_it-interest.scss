@@ -12,8 +12,7 @@
 
 .it-interest .container {
     @media (min-width: 1200px) {        
-        padding-left: 170px; 
-        width: 1478px;        
+        position: relative;        
     } 
 }
 
@@ -198,10 +197,10 @@
 
 .it-interest__wrapper_2 {    
     @media (min-width: 1200px) {
-        display: inline-block;
         width: 560px;
-        padding-left: 0;
-        vertical-align: bottom;          
+        position: absolute;
+        bottom: -8px;
+        right: -154px;          
     }
 }
 
